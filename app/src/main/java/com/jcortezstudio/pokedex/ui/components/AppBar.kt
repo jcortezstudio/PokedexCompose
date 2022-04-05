@@ -24,14 +24,12 @@ fun AppBar(
                     Icon(imageVector = navigationIcon, contentDescription = null)
                 }
             },
-            backgroundColor = MaterialTheme.colors.primary,
-            elevation = 0.dp
+            backgroundColor = MaterialTheme.colors.primary
         )
     } else {
         TopAppBar(
             title = { Text(text = titleText, color = MaterialTheme.colors.onPrimary) },
-            backgroundColor = MaterialTheme.colors.primary,
-            elevation = 0.dp
+            backgroundColor = MaterialTheme.colors.primary
         )
     }
 }

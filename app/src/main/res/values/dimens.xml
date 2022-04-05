@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_min_padding">8dp</dimen>
+    <dimen name="pokemon_image_size">120dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+</resources>

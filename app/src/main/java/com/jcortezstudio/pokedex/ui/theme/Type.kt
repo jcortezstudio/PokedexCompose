@@ -10,32 +10,80 @@ import androidx.compose.ui.unit.sp
 val Typography = Typography(
     h1 = TextStyle(
         fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Bold,
-        fontSize = 28.sp,
+        fontWeight = FontWeight.Medium,
+        fontSize = 32.sp,
         color = White
     ),
     h2 = TextStyle(
         fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Bold,
-        fontSize = 21.sp,
+        fontWeight = FontWeight.Medium,
+        fontSize = 24.sp,
         color = White
     ),
     h3 = TextStyle(
         fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Bold,
+        fontWeight = FontWeight.Medium,
+        fontSize = 20.sp,
+        color = White
+    ),
+    h4 = TextStyle(
+        fontFamily = FontFamily.Default,
+        fontSize = 18.sp,
+        fontWeight = FontWeight.Bold
+
+    ),
+    h5 = TextStyle(
+        fontFamily = FontFamily.Default,
         fontSize = 16.sp,
+        fontWeight = FontWeight.Medium,
+        color = White
+    ),
+    h6 = TextStyle(
+        fontFamily = FontFamily.Default,
+        fontSize = 14.sp,
+        fontWeight = FontWeight.Medium,
+        color = White
+    ),
+    subtitle1 = TextStyle(
+        fontFamily = FontFamily.Default,
+        fontSize = 12.sp,
+        fontWeight = FontWeight.Light,
+        color = White
+    ),
+    subtitle2 = TextStyle(
+        fontFamily = FontFamily.Default,
+        fontSize = 11.sp,
+        fontWeight = FontWeight.Light,
         color = White
     ),
     body1 = TextStyle(
         fontFamily = FontFamily.Default,
+        fontSize = 14.sp,
         fontWeight = FontWeight.Normal,
-        fontSize = 16.sp,
         color = White
     ),
     body2 = TextStyle(
         fontFamily = FontFamily.Default,
+        fontSize = 13.sp,
         fontWeight = FontWeight.Normal,
+        color = White
+    ),
+    button = TextStyle(
+        fontFamily = FontFamily.Default,
         fontSize = 14.sp,
+        fontWeight = FontWeight.Medium,
+        color = White
+    ),
+    caption = TextStyle(
+        fontFamily = FontFamily.Default,
+        fontSize = 12.sp,
+        fontWeight = FontWeight.Bold,
+        color = White
+    ),
+    overline = TextStyle(
+        fontFamily = FontFamily.Default,
+        fontSize = 12.sp,
+        fontWeight = FontWeight.Bold,
         color = White
     )
 )

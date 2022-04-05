@@ -7,11 +7,16 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.SideEffect
+import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import androidx.navigation.navArgument
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
-import com.jcortezstudio.pokedex.ui.screens.HomeScreen
+import com.jcortezstudio.pokedex.ui.PokedexApp
+import com.jcortezstudio.pokedex.ui.detail.DetailScreen
+import com.jcortezstudio.pokedex.ui.home.HomeScreen
+import com.jcortezstudio.pokedex.ui.navigation.PokeNav
 import com.jcortezstudio.pokedex.ui.theme.PokedexTheme
 import com.jcortezstudio.pokedex.ui.theme.White
 import dagger.hilt.android.AndroidEntryPoint
@@ -40,12 +45,19 @@ fun NavigationHost() {
             darkIcons = useDarkIcons
         )
     }
-    PokedexTheme {
-        Surface(color = MaterialTheme.colors.background) {
-            NavHost(navController = navController, startDestination = "home") {
-                composable(route = "home") {
-                    HomeScreen(navController = navController)
-                }
+    PokedexApp {
+        NavHost(
+            navController = navController,
+            startDestination = PokeNav.Home.route
+        ) {
+            composable(route = PokeNav.Home.route) {
+                HomeScreen(navController = navController)
+            }
+            composable(
+                route = PokeNav.Detail.route,
+                arguments = listOf(navArgument("pokemonName"){ type = NavType.StringType})
+            ) { backStackEntry ->
+                DetailScreen(navController = navController)
             }
         }
     }
