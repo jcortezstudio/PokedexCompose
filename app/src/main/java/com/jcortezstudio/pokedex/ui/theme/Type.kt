@@ -7,7 +7,88 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 
 // Set of Material typography styles to start with
-val Typography = Typography(
+val Light = Typography(
+    h1 = TextStyle(
+        fontFamily = FontFamily.Default,
+        fontWeight = FontWeight.Medium,
+        fontSize = 32.sp,
+        color = Black
+    ),
+    h2 = TextStyle(
+        fontFamily = FontFamily.Default,
+        fontWeight = FontWeight.Medium,
+        fontSize = 24.sp,
+        color = Black
+    ),
+    h3 = TextStyle(
+        fontFamily = FontFamily.Default,
+        fontWeight = FontWeight.Medium,
+        fontSize = 20.sp,
+        color = Black
+    ),
+    h4 = TextStyle(
+        fontFamily = FontFamily.Default,
+        fontSize = 18.sp,
+        fontWeight = FontWeight.Bold,
+        color = Black
+    ),
+    h5 = TextStyle(
+        fontFamily = FontFamily.Default,
+        fontSize = 16.sp,
+        fontWeight = FontWeight.Medium,
+        color = Black
+    ),
+    h6 = TextStyle(
+        fontFamily = FontFamily.Default,
+        fontSize = 14.sp,
+        fontWeight = FontWeight.Medium,
+        color = Black
+    ),
+    subtitle1 = TextStyle(
+        fontFamily = FontFamily.Default,
+        fontSize = 12.sp,
+        fontWeight = FontWeight.Light,
+        color = Black
+    ),
+    subtitle2 = TextStyle(
+        fontFamily = FontFamily.Default,
+        fontSize = 11.sp,
+        fontWeight = FontWeight.Light,
+        color = Black
+    ),
+    body1 = TextStyle(
+        fontFamily = FontFamily.Default,
+        fontSize = 14.sp,
+        fontWeight = FontWeight.Normal,
+        color = Black
+    ),
+    body2 = TextStyle(
+        fontFamily = FontFamily.Default,
+        fontSize = 13.sp,
+        fontWeight = FontWeight.Normal,
+        color = Black
+    ),
+    button = TextStyle(
+        fontFamily = FontFamily.Default,
+        fontSize = 14.sp,
+        fontWeight = FontWeight.Medium,
+        color = Black
+    ),
+    caption = TextStyle(
+        fontFamily = FontFamily.Default,
+        fontSize = 12.sp,
+        fontWeight = FontWeight.Bold,
+        color = Black
+    ),
+    overline = TextStyle(
+        fontFamily = FontFamily.Default,
+        fontSize = 12.sp,
+        fontWeight = FontWeight.Bold,
+        color = Black
+    )
+)
+
+val Dark = Typography(
     h1 = TextStyle(
         fontFamily = FontFamily.Default,
         fontWeight = FontWeight.Medium,

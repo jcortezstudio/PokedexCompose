@@ -31,15 +31,22 @@ private val LightColorPalette = lightColors(
 
 @Composable
 fun PokedexTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable () -> Unit) {
+
     val colors = if (darkTheme) {
         DarkColorPalette
     } else {
         LightColorPalette
     }
 
+    val type = if (darkTheme) {
+        Dark
+    } else {
+        Light
+    }
+
     MaterialTheme(
         colors = colors,
-        typography = Typography,
+        typography = type,
         shapes = Shapes,
         content = content
     )
